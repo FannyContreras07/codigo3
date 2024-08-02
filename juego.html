@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijeras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 5px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Piedra, Papel o Tijeras</h1>
+        <div>
+            <label for="jugador1">Jugador 1:</label>
+            <input type="text" id="jugador1" placeholder="Introduce piedra, papel o tijeras">
+        </div>
+        <div>
+            <label for="jugador2">Jugador 2:</label>
+            <input type="text" id="jugador2" placeholder="Introduce piedra, papel o tijeras">
+        </div>
+        <button onclick="jugar()">Jugar</button>
+        <h2 id="resultado"></h2>
+    </div>
+    <script src="juego.js"></script>
+</body>
+</html>
